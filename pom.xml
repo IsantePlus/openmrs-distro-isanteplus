@@ -39,7 +39,7 @@
 		<registrationappVersion>1.6</registrationappVersion>
 		<eventVersion>2.5</eventVersion>
 		<idgenVersion>4.4.0</idgenVersion>
-		<emrapiVersion>1.18</emrapiVersion>
+		<emrapiVersion>1.21.0</emrapiVersion>
 		<referenceapplicationVersion>2.5</referenceapplicationVersion>
 		<providermanagementVersion>2.5.0</providermanagementVersion>
 		<uilibraryVersion>2.0.4</uilibraryVersion>
@@ -48,9 +48,9 @@
 		<htmlwidgetsVersion>1.7.2</htmlwidgetsVersion>
 		<reportingVersion>0.10.6</reportingVersion>
 		<reportingRestVersion>1.6</reportingRestVersion>
-		<metadatadeployVersion>1.7</metadatadeployVersion>
+		<metadatadeployVersion>1.8.1</metadatadeployVersion>
 		<metadatasharingVersion>1.2.2</metadatasharingVersion>
-		<metadatamappingVersion>1.2.1</metadatamappingVersion>
+		<metadatamappingVersion>1.3.1</metadatamappingVersion>
 		<uicommonsVersion>2.1</uicommonsVersion>
 		<appuiVersion>1.7</appuiVersion>
 		<htmlformentryVersion>3.3.2</htmlformentryVersion>
@@ -72,6 +72,10 @@
 		<reportingcompatibilityVersion>2.0.2</reportingcompatibilityVersion>
 		<fhirVersion>1.6</fhirVersion>
 		<owaVersion>1.6.3</owaVersion>
+		<!-- iSantePlus Only Dependencies (Not in Reference App) -->
+		<addresshierarchyVersion>2.9</addresshierarchyVersion>
+		<isanteplusVersion>1.2-SNAPSHOT</isanteplusVersion>
+		<haiticoreVersion>1.0.0-SNAPSHOT</haiticoreVersion>
 	</properties>
 
 	<dependencyManagement>
@@ -995,6 +999,25 @@
             <groupId>org.openmrs.test</groupId>
             <artifactId>openmrs-test</artifactId>
             <type>pom</type>
+        </dependency>
+        <!-- iSantePlus Only Dependencies (Not in Reference App) -->
+        <dependency>
+            <groupId>org.openmrs.module</groupId>
+            <artifactId>addresshierarchy-omod</artifactId>
+            <version>${addresshierarchyVersion}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.openmrs.module</groupId>
+            <artifactId>isanteplus-omod</artifactId>
+            <version>${isanteplusVersion}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.openmrs.module</groupId>
+            <artifactId>haiticore-omod</artifactId>
+            <version>${haiticoreVersion}</version>
+            <scope>provided</scope>
         </dependency>
 	</dependencies>
 	

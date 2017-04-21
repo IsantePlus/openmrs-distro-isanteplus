@@ -247,6 +247,22 @@
 									<artifactId>reportingcompatibility-omod</artifactId>
 									<destFileName>reportingcompatibility-${reportingcompatibilityVersion}.omod</destFileName>
 								</artifactItem>
+								<!-- iSantePlus Only Artifacts (Not in Reference App) -->
+								<artifactItem>
+									<groupId>org.openmrs.module</groupId>
+									<artifactId>addresshierarchy-omod</artifactId>
+									<destFileName>addresshierarchy-${addresshierarchyVersion}.omod</destFileName>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.openmrs.module</groupId>
+									<artifactId>isanteplus-omod</artifactId>
+									<destFileName>isanteplus-${isanteplusVersion}.omod</destFileName>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.openmrs.module</groupId>
+									<artifactId>haiticore-omod</artifactId>
+									<destFileName>haiticore-${haiticoreVersion}.omod</destFileName>
+								</artifactItem>
 							</artifactItems>
 							<outputDirectory>${project.build.directory}/distro</outputDirectory>
 						</configuration>
