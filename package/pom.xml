@@ -6,7 +6,7 @@
 	<artifactId>referenceapplication-package</artifactId>
 	<version>2.5</version>
 	<packaging>jar</packaging>
-	<name>Reference Application Distribution Package</name>
+	<name>iSantePlus Reference Application Distribution Package</name>
 	<description>Scripts for building the Reference Application distribution package</description>
 	<url>https://wiki.openmrs.org/x/yQRDAg</url>
 
