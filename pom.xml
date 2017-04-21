@@ -54,15 +54,14 @@
 		<uicommonsVersion>2.1</uicommonsVersion>
 		<appuiVersion>1.7</appuiVersion>
 		<htmlformentryVersion>3.3.0</htmlformentryVersion>
-		<htmlformentry19extVersion>1.7</htmlformentry19extVersion>
 		<htmlformentryuiVersion>1.6.1</htmlformentryuiVersion>
 		<coreappsVersion>1.11.1</coreappsVersion>
 		<webservices.restVersion>2.16</webservices.restVersion>
-		<referencedemodataVersion>1.4.3</referencedemodataVersion>
+		<!-- <referencedemodataVersion>1.4.3</referencedemodataVersion> -->
 		<dataexchangeVersion>1.3.2</dataexchangeVersion>
 		<allergyuiVersion>1.6</allergyuiVersion>
 		<formentryappVersion>1.3</formentryappVersion>
-		<atlasVersion>2.2</atlasVersion>
+		<!-- <atlasVersion>2.2</atlasVersion> -->
 		<chartsearchVersion>2.0</chartsearchVersion>
 		<appointmentschedulingVersion>1.7.0</appointmentschedulingVersion>
 		<appointmentschedulinguiVersion>1.4.0</appointmentschedulinguiVersion>
@@ -305,12 +304,6 @@
 			</dependency>
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
-				<artifactId>htmlformentry19ext-api</artifactId>
-				<version>${htmlformentry19extVersion}</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.openmrs.module</groupId>
 				<artifactId>htmlformentryui-api</artifactId>
 				<version>${htmlformentryuiVersion}</version>
 				<scope>provided</scope>
@@ -351,12 +344,14 @@
 				<version>${webservices.restVersion}</version>
 				<scope>provided</scope>
 			</dependency>
+			<!-- We do not plan to use demodata
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>referencedemodata-api</artifactId>
 				<version>${referencedemodataVersion}</version>
 				<scope>provided</scope>
 			</dependency>
+			-->
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>namephonetics-api</artifactId>
@@ -369,12 +364,14 @@
 				<version>${reportingRestVersion}</version>
 				<scope>provided</scope>
 			</dependency>
+			<!-- We do not plan to use atlas
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>atlas-api</artifactId>
 				<version>${atlasVersion}</version>
 				<scope>provided</scope>
 			</dependency>
+			-->
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>chartsearch-api</artifactId>
@@ -585,6 +582,7 @@
 				<classifier>tests</classifier>
 				<scope>test</scope>
 			</dependency>
+			<!-- We do not plan to use demodata
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>referencedemodata-api</artifactId>
@@ -592,6 +590,8 @@
 				<classifier>tests</classifier>
 				<scope>test</scope>
 			</dependency>
+			-->
+			<!-- We do not plan to use atlas
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>atlas-api</artifactId>
@@ -599,6 +599,7 @@
 				<classifier>tests</classifier>
 				<scope>test</scope>
 			</dependency>
+			-->
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>chartsearch-api</artifactId>
@@ -797,12 +798,14 @@
 				<type>test-jar</type>
 				<scope>test</scope>
 			</dependency>
+			<!-- We do not plan to use demodata
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>referencedemodata-omod</artifactId>
 				<version>${referencedemodataVersion}</version>
 				<scope>provided</scope>
 			</dependency>
+			-->
             <dependency>
                 <groupId>org.openmrs.module</groupId>
                 <artifactId>reportingrest-omod</artifactId>
@@ -874,13 +877,14 @@
 				<version>${formentryappVersion}</version>
 				<scope>provided</scope>
 			</dependency>
-
+			<!-- We do not plan to use atlas
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>atlas-omod</artifactId>
 				<version>${atlasVersion}</version>
 				<scope>provided</scope>
 			</dependency>
+			-->
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>chartsearch-omod</artifactId>
@@ -1002,8 +1006,8 @@
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>3.1</version>
 					<configuration>
-						<target>1.6</target>
-						<source>1.6</source>
+						<target>1.8</target>
+						<source>1.8</source>
 					</configuration>
 				</plugin>
 				<plugin>

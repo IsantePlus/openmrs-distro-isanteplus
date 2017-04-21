@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.openmrs.distro</groupId>
-	<artifactId>referenceapplication-package</artifactId>
+	<artifactId>isanteplus-referenceapplication-package</artifactId>
 	<version>2.5</version>
 	<packaging>jar</packaging>
 	<name>iSantePlus Reference Application Distribution Package</name>
@@ -157,12 +157,6 @@
 								</artifactItem>
 								<artifactItem>
 									<groupId>org.openmrs.module</groupId>
-									<artifactId>htmlformentry19ext-omod</artifactId>
-									<destFileName>htmlformentry19ext-${htmlformentry19extVersion}.omod
-									</destFileName>
-								</artifactItem>
-								<artifactItem>
-									<groupId>org.openmrs.module</groupId>
 									<artifactId>htmlformentryui-omod</artifactId>
 									<destFileName>htmlformentryui-${htmlformentryuiVersion}.omod</destFileName>
 								</artifactItem>
@@ -186,12 +180,6 @@
 									<artifactId>webservices.rest-omod</artifactId>
 									<destFileName>webservices.rest-${webservices.restVersion}.omod</destFileName>
 								</artifactItem>
-								<artifactItem>
-									<groupId>org.openmrs.module</groupId>
-									<artifactId>referencedemodata-omod</artifactId>
-									<destFileName>referencedemodata-${referencedemodataVersion}.omod
-									</destFileName>
-								</artifactItem>
                                 <artifactItem>
                                     <groupId>org.openmrs.module</groupId>
                                     <artifactId>reportingrest-omod</artifactId>
@@ -212,12 +200,14 @@
 									<artifactId>formentryapp-omod</artifactId>
 									<destFileName>formentryapp-${formentryappVersion}.omod</destFileName>
 								</artifactItem>
+								<!-- We do not plan to use Atlas in the distribution
 								<artifactItem>
 									<groupId>org.openmrs.module</groupId>
 									<artifactId>atlas-omod</artifactId>
 									<type>omod</type>
 									<destFileName>atlas-${atlasVersion}.omod</destFileName>
 								</artifactItem>
+								 -->
                                <artifactItem>
                                     <groupId>org.openmrs.module</groupId>
                                     <artifactId>appointmentscheduling-omod</artifactId>
