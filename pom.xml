@@ -73,7 +73,7 @@
 		<fhirVersion>1.6</fhirVersion>
 		<owaVersion>1.6.3</owaVersion>
 		<!-- iSantePlus Only Dependencies (Not in Reference App) -->
-		<addresshierarchyVersion>2.9</addresshierarchyVersion>
+		<addresshierarchyVersion>2.10</addresshierarchyVersion>
 		<isanteplusVersion>1.2-SNAPSHOT</isanteplusVersion>
 		<haiticoreVersion>1.0.0-SNAPSHOT</haiticoreVersion>
 	</properties>
