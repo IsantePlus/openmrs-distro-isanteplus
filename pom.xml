@@ -39,7 +39,7 @@
 		<registrationappVersion>1.6</registrationappVersion>
 		<eventVersion>2.5</eventVersion>
 		<idgenVersion>4.4.0</idgenVersion>
-		<emrapiVersion>1.21.0</emrapiVersion>
+		<emrapiVersion>1.18</emrapiVersion>
 		<referenceapplicationVersion>2.5</referenceapplicationVersion>
 		<providermanagementVersion>2.5.0</providermanagementVersion>
 		<uilibraryVersion>2.0.4</uilibraryVersion>
@@ -586,7 +586,7 @@
 				<classifier>tests</classifier>
 				<scope>test</scope>
 			</dependency>
-			<!-- We do not plan to use demodata
+
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>referencedemodata-api</artifactId>
@@ -594,7 +594,7 @@
 				<classifier>tests</classifier>
 				<scope>test</scope>
 			</dependency>
-			-->
+
 			<!-- We do not plan to use atlas
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
@@ -802,14 +802,14 @@
 				<type>test-jar</type>
 				<scope>test</scope>
 			</dependency>
-			<!-- We do not plan to use demodata
+
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>referencedemodata-omod</artifactId>
 				<version>${referencedemodataVersion}</version>
 				<scope>provided</scope>
 			</dependency>
-			-->
+
             <dependency>
                 <groupId>org.openmrs.module</groupId>
                 <artifactId>reportingrest-omod</artifactId>

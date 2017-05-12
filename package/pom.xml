@@ -62,6 +62,12 @@
 									</destFileName>
 								</artifactItem>
 								<artifactItem>
+                                                                        <groupId>org.openmrs.module</groupId>
+                                                                        <artifactId>referencedemodata-omod</artifactId>
+                                                                        <destFileName>referencedemodata-${referencedemodataVersion}.omod
+                                                                        </destFileName>
+                                                                </artifactItem>
+								<artifactItem>
 									<groupId>org.openmrs.module</groupId>
 									<artifactId>appframework-omod</artifactId>
 									<destFileName>appframework-${appframeworkVersion}.omod</destFileName>
